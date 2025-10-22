@@ -99,44 +99,45 @@ _<div align="right">Предисловие к книге о Rust</div>_
 - [Rustlings][rustlings] — сборник небольших упражнений, чтобы привыкнуть к чтению и написанию кода на [Rust].  
 - [Rust на Exercism][Rust on Exercism] — упражнения по программированию с наставничеством.  
 - [Rust Quiz][Rust Quiz] — вопросы по [Rust] средней и высокой сложности с пояснениями.
-[Awesome Rust]: https://github.com/rust-unofficial/awesome-rust
-[Baby Steps]: http://smallcultfollowing.com/babysteps
-[Cargo]: https://github.com/rust-lang/cargo
-[Cargo Book]: https://doc.rust-lang.org/cargo
-[Cheats.rs]: https://cheats.rs
-[CLion]: https://www.jetbrains.com/clion
-[Clippy]: https://github.com/rust-lang/rust-clippy
-[Effective Rust]: https://www.lurklurk.org/effective-rust
-[GitHub repository]: https://help.github.com/articles/github-glossary/#repository
-[IntelliJ IDEA]: https://www.jetbrains.com/idea
-[IntelliJ Rust]: https://intellij-rust.github.io
-[IntelliJ Toml]: https://plugins.jetbrains.com/plugin/8195-toml
-[Learning Material for Idiomatic Rust]: https://corrode.dev/blog/idiomatic-rust-resources
-[PR]: https://help.github.com/articles/github-glossary/#pull-request
-[RSS subscription]: https://github.com/instrumentisto/rust-incubator/commits/main.atom
-[Rust]: https://www.rust-lang.org
-[Rust 2018]: https://doc.rust-lang.org/edition-guide/rust-2018/index.html
-[Rust 2021]: https://doc.rust-lang.org/edition-guide/rust-2021/index.html
-[Rust API Guidelines]: https://rust-lang.github.io/api-guidelines
-[Rust Book]: https://doc.rust-lang.org/book
-[Rust By Example]: https://doc.rust-lang.org/rust-by-example
-[Rust Cookbook]: https://rust-lang-nursery.github.io/rust-cookbook
-[Rust Design Patterns]: https://rust-unofficial.github.io/patterns
-[Rust Edition Guide]: https://doc.rust-lang.org/edition-guide
-[Rust FAQ]: https://prev.rust-lang.org/faq.html
-[Rust on Exercism]: https://exercism.org/tracks/rust/exercises
-[Rust Playground]: https://play.rust-lang.org
-[Rust Quiz]: https://github.com/dtolnay/rust-quiz
-[Rust Reference]: https://doc.rust-lang.org/reference
-[Rust std lib]: https://doc.rust-lang.org/std
-[Rust SVG Cheatsheet]: https://web.archive.org/web/20241001012119/https://www.breakdown-notes.com/make/load/rust_cs_canvas/true
-[Rustdoc Book]: https://doc.rust-lang.org/rustdoc
-[rustfmt]: https://github.com/rust-lang/rustfmt
-[rustlings]: https://rustlings.cool
-[rustup]: https://rustup.rs
-[This Week in Rust]: https://this-week-in-rust.org
 
-[1]: https://github.com/instrumentisto/rust-incubator/generate
-[2]: https://github.com/instrumentisto/rust-incubator/subscription
-[11]: https://help.github.com/en/articles/creating-a-repository-from-a-template
-[13]: https://doc.rust-lang.org/book/ch14-03-cargo-workspaces.html
+- [Awesome Rust]: https://github.com/rust-unofficial/awesome-rust  
+- [Baby Steps]: http://smallcultfollowing.com/babysteps
+- [Cargo]: https://github.com/rust-lang/cargo  
+- [Cargo Book]: https://doc.rust-lang.org/cargo  
+- [Cheats.rs]: https://cheats.rs  
+- [CLion]: https://www.jetbrains.com/clion  
+- [Clippy]: https://github.com/rust-lang/rust-clippy  
+- [Effective Rust]: https://www.lurklurk.org/effective-rust  
+- [GitHub repository]: https://help.github.com/articles/github-glossary/#repository
+- [IntelliJ IDEA]:   https://www.jetbrains.com/idea  
+- [IntelliJ Rust]: https://intellij-rust.github.io  
+- [IntelliJ Toml]: https://plugins.jetbrains.com/plugin/8195-toml  
+- [Learning Material for Idiomatic Rust]: https://corrode.dev/blog/idiomatic-rust-resources  
+- [PR]: https://help.github.com/articles/github-glossary/#pull-request
+- [RSS subscription]:   https://github.com/instrumentisto/rust-incubator/commits/main.atom  
+- [Rust]: https://www.rust-lang.org  
+- [Rust 2018]: https://doc.rust-lang.org/edition-guide/rust-2018/index.html  
+- [Rust 2021]: https://doc.rust-lang.org/edition-guide/rust-2021/index.html  
+- [Rust API Guidelines]: https://rust-lang.github.io/api-guidelines  
+- [Rust Book]: https://doc.rust-lang.org/book  
+- [Rust By Example]: https://doc.rust-lang.org/rust-by-example  
+- [Rust Cookbook]: https://rust-lang-nursery.github.io/rust-cookbook  
+- [Rust Design Patterns]: https://rust-unofficial.github.io/patterns  
+- [Rust Edition Guide]: https://doc.rust-lang.org/edition-guide  
+- [Rust FAQ]: https://prev.rust-lang.org/faq.html  
+- [Rust on Exercism]: https://exercism.org/tracks/rust/exercises  
+- [Rust Playground]: https://play.rust-lang.org  
+- [Rust Quiz]: https://github.com/dtolnay/rust-quiz  
+- [Rust Reference]: https://doc.rust-lang.org/reference  
+- [Rust std lib]: https://doc.rust-lang.org/std  
+- [Rust SVG Cheatsheet]: https://web.archive.org/web/20241001012119/https  ://www.breakdown-notes.com/make/load/rust_cs_canvas/true
+- [Rustdoc Book]: https://doc.rust-lang.org/rustdoc  
+- [rustfmt]: https://github.com/rust-lang/rustfmt  
+- [rustlings]: https://rustlings.cool  
+- [rustup]: https://rustup.rs  
+- [This Week in Rust]: https://this-week-in-rust.org  
+
+- [1]: https://github.com/instrumentisto/rust-incubator/generate  
+- [2]: https://github.com/instrumentisto/rust-incubator/subscription  
+- [11]: https://help.github.com/en/articles/creating-a-repository-from-a-template  
+- [13]: https://doc.rust-lang.org/book/ch14-03-cargo-workspaces.html
