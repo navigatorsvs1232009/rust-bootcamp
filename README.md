@@ -1,156 +1,104 @@
 Rust Incubator
 ==============
 
-> It wasn’t always so clear, but the Rust programming language is fundamentally about _empowerment_: no matter what kind of code you are writing now, Rust empowers you to reach farther, to program with confidence in a wider variety of domains than you did before.
-_<div align="right">Rust Book's Foreword</div>_
+> Раньше это было не так очевидно, но суть языка программирования Rust заключается в _расширении возможностей_: независимо от того, какой код вы пишете сейчас, Rust позволяет вам выходить на новый уровень, программировать с уверенностью в более широком спектре областей, чем раньше.  
+_<div align="right">Предисловие к книге о Rust</div>_
 
-This project represents a hard-way step-by-step [Rust] learning course from language basics to a capability of web backend development.
+Этот проект представляет собой пошаговый курс изучения [Rust] «трудным путём» — от основ языка до умения разрабатывать веб‑бэкенд.
 
+## Предварительные требования
 
+### Инструментарий
 
+- [rustup] — для установки инструментария [Rust] и его обновления.
+- [CLion]/[IntelliJ IDEA] + плагины [IntelliJ Rust] + [Toml][IntelliJ Toml] в качестве среды разработки (или любая другая по вашему выбору).
 
-## Prerequisites
+### Книжная полка
 
+- [Книга о Rust] ([Rust Book]) — обучает основам [Rust] и объясняет их.
+- [Rust By Example] — обучает основам [Rust] на редактируемых примерах.
+- [Справочник по Rust] ([Rust Reference]) — не является официальной спецификацией, но более детализирован и всеобъемлющ, чем [Книга о Rust].
+- [Cheats.rs] и [Шпаргалка по Rust в SVG] ([Rust SVG Cheatsheet]) — для быстрого поиска информации.
+- [Руководство по изданиям Rust] ([Rust Edition Guide]) — чтобы ознакомиться с улучшениями в [Rust 2018] и [Rust 2021].
+- Документация [стандартной библиотеки Rust] ([Rust std lib]).
+- [Книга о Cargo] ([Cargo Book]) — руководство по [Cargo], инструменту сборки и менеджеру зависимостей в [Rust].
+- [Книга о rustdoc] ([Rustdoc Book]) — руководство по инструменту документирования `rustdoc`.
+- [Кулинарная книга Rust] ([Rust Cookbook]) — сборник простых примеров, демонстрирующих лучшие практики для решения типовых задач программирования с использованием крейтов из экосистемы [Rust].
+- [Шаблоны проектирования Rust] ([Rust Design Patterns]) — открытый репозиторий шаблонов и идиом [Rust].
+- [Effective Rust] — сборник рекомендаций, выведенных из реального опыта создания программного обеспечения на [Rust].
+- [Рекомендации по проектированию API для Rust] ([Rust API Guidelines]) — набор рекомендаций о том, как проектировать и представлять API для [Rust].
+- [FAQ по Rust] ([Rust FAQ]) — ответы на распространённые вопросы о [Rust].
+- [Площадка Rust] ([Rust Playground]) — позволяет делиться и проверять исполняемые фрагменты кода [Rust] онлайн.
+- [Awesome Rust] — тщательно отобранный список кода и ресурсов [Rust].
+- [This Week in Rust] — подборка актуальных еженедельных обновлений по [Rust], на которые можно подписаться.
+- Блог [Baby Steps] от [Николаса Матсакиса](https://github.com/nikomatsakis) — полезные шаблоны, идеи и решения по проектированию на [Rust].
+- [Материалы для изучения идиоматичного Rust] ([Learning Material for Idiomatic Rust]) — подборка ресурсов, которые помогут писать эргономичный и идиоматичный код на [Rust].
 
-### Toolchain
+## Этапы
 
-- [rustup] for installing the [Rust] toolchain and keeping it up-to-date.
-- [CLion]/[IntelliJ IDEA] + [IntelliJ Rust] + [Toml][IntelliJ Toml] plugins as the development environment (or any other of your choice).
+### Перед началом
 
+[Создайте][1] новый [репозиторий на GitHub] для себя, используя этот репозиторий [в качестве шаблона][11].
 
-### Bookshelf
-
-- [Rust Book] teaches and explains [Rust] basics.
-- [Rust By Example] teaches you [Rust] basics using editable examples.
-- [Rust Reference] is not a formal spec, but is more detailed and comprehensive than the [Rust Book].
-- [Cheats.rs] and [Rust SVG Cheatsheet] for quick reference.
-- [Rust Edition Guide] for considering the improvements in [Rust 2018] and [Rust 2021].
-- [Rust std lib] documentation.
-- [Cargo Book] is a guide to [Cargo], [Rust]'s build tool and dependency manager.
-- [Rustdoc Book] is a guide to the `rustdoc` documentation tool.
-- [Rust Cookbook] is a collection of simple examples that demonstrate good practices to accomplish common programming tasks, using crates from the [Rust] ecosystem.
-- [Rust Design Patterns] is an open source repository of [Rust] design patterns and idioms.
-- [Effective Rust] is a collection of guidelines that had been learned from real world experience of creating software in [Rust].
-- [Rust API Guidelines] is a set of recommendations on how to design and present APIs for [Rust].
-- [Rust FAQ] answers common questions about [Rust].
-- [Rust Playground] allows sharing and checking runnable [Rust] code snippets online.
-- [Awesome Rust] is a curated list of [Rust] code and resources.
-- [This Week in Rust] represents handpicked and subscribable [Rust] weekly updates.
-- [Baby Steps] blog by [Nicholas Matsakis](https://github.com/nikomatsakis) shares useful [Rust] patterns, ideas and design decisions.
-- [Learning Material for Idiomatic Rust] is a curated list of resources to help you write ergonomic and idiomatic [Rust] code.
-
-
-
-
-## Steps
-
-
-### Before you start
-
-[Create][1] a new [GitHub repository] for yourself using this one [as a template][11].
-
-> __NOTE__: __This learning course is constantly improving and evolving over time.__ 
+> __ПРИМЕЧАНИЕ:__ __Этот учебный курс постоянно совершенствуется и развивается.__
 >
-> To be up-to-date with the recent changes in your own copy of this repository, attach the upstream history with the following commands:
+> Чтобы быть в курсе последних изменений в вашей копии репозитория, подключите историю исходного репозитория с помощью следующих команд:
 > ```bash
 > git remote add upstream https://github.com/instrumentisto/rust-incubator.git
 > git fetch upstream main
 > git merge upstream/main --allow-unrelated-histories
 > ```
-> And then, whenever you want to grab some new changes, do the following:
+> Затем, когда вы захотите получить новые изменения, выполните:
 > ```bash
 > git fetch upstream main
 > git merge upstream/main
 > ```
-> Additionally, to be aware about new changes, you may either [watch this repository on GitHub][2], or even track it via [RSS subscription].
+> Кроме того, чтобы быть в курсе новых изменений, вы можете либо [подписаться на этот репозиторий на GitHub][2], либо отслеживать его через [RSS‑подписку].
 
+### График
 
-### Schedule
+Каждый этап должен быть выполнен как отдельный [PR (запрос на включение, pull request)][PR] с соответствующим названием и отмечен галочкой здесь, в графике README, после завершения. Каждый этап — это [член рабочей области Cargo][13], поэтому вы можете запускать/тестировать его из корневой директории проекта (например, `cargo run -p step_1_8`). __Рекомендуется использовать [rustfmt] и [Clippy] при написании кода на [Rust].__
 
-Each step must be performed as a separate [PR (pull request)][PR] with an appropriate name and check-marked here in the README's schedule after completion. Each step is a [Cargo workspace member][13], so you can run/test it from the project root (i.e. `cargo run -p step_1_8`). __Consider using [rustfmt] and [Clippy] when you're writing [Rust] code.__
+- [ ] [0. Ознакомление с основами Rust][Step 0] (3 дня)
+- [ ] [1. Концепции][Step 1] (2 дня, после всех подэтапов)
+    - [ ] [1.1. Значения по умолчанию, клонирование и копирование][Step 1.1] (1 день)
+    - [ ] [1.2. Боксинг и закрепление (boxing и pinning)][Step 1.2] (1 день)
+    - [ ] [1.3. Совместное владение и внутренняя изменчивость (shared ownership и interior mutability)][Step 1.3] (1 день)
+    - [ ] [1.4. Клонирование при записи (clone‑on‑write)][Step 1.4] (1 день)
+    - [ ] [1.5. Преобразования, приведение типов и разыменование (conversions, casting и dereferencing)][Step 1.5] (1 день)
+    - [ ] [1.6. Статическая и динамическая диспетчеризация (static и dynamic dispatch)][Step 1.6] (1 день)
+    - [ ] [1.7. Типы `Sized` и `?Sized`][Step 1.7] (1 день)
+    - [ ] [1.8. Потокобезопасность (thread safety)][Step 1.8] (1 день)
+    - [ ] [1.9. Фантомные типы (phantom types)][Step 1.9] (1 день)
+- [ ] [2. Идиомы][Step 2] (2 дня, после всех подэтапов)
+    - [ ] [2.1. Насыщенные типы обеспечивают корректность (rich types ensure correctness)][Step 2.1] (1 день)
+    - [ ] [2.2. Обмен значениями с помощью `mem::replace`][Step 2.2] (1 день)
+    - [ ] [2.3. Ограничение поведения, а не данных (bound behavior, not data)][Step 2.3] (1 день)
+    - [ ] [2.4. Абстрактный тип на входе, конкретный тип на выходе (abstract type in, concrete type out)][Step 2.4] (1 день)
+    - [ ] [2.5. Полнота (exhaustivity)][Step 2.5] (1 день)
+    - [ ] [2.6. Сеалинг (sealing)][Step 2.6] (1 день)
+- [ ] [3. Распространённая экосистема][Step 3] (2 дня, после всех подэтапов)
+    - [ ] [3.1. Тестирование и моки (testing и mocking)][Step 3.1] (1 день)
+    - [ ] [3.2. Декларативные и процедурные макросы (declarative и procedural macros)][Step 3.2] (1 день)
+    - [ ] [3.3. Дата и время (date и time)][Step 3.3] (1 день)
+    - [ ] [3.4. Регулярные выражения и пользовательские парсеры (regular expressions и custom parsers)][Step 3.4] (1 день)
+    - [ ] [3.5. Коллекции и итераторы (collections и iterators)][Step 3.5] (1 день)
+    - [ ] [3.6. Сериализация и десериализация (serialization и deserialization)][Step 3.6] (1 день)
+    - [ ] [3.7. Случайность и криптография (randomness и cryptography)][Step 3.7] (1 день)
+    - [ ] [3.8. Логирование и трассировка (logging и tracing)][Step 3.8] (1 день)
+    - [ ] [3.9. Аргументы командной строки, переменные окружения и конфигурации (command‑line arguments, environment variables и configs)][Step 3.9] (1 день)
+    - [ ] [3.10. Многопоточность и параллелизм (multithreading и parallelism)][Step 3.10] (1 день)
+    - [ ] [3.11. Асинхронный ввод‑вывод, фьючерсы и акторы (async I/O, futures и actors)][Step 3.11] (2 дня)
+- [ ] [4. Экосистема бэкенда][Step 4] (3 дня, после всех подэтапов)  
+    - [ ] [4.1. Базы данных, пулы соединений и ORM][Step 4.1] (1 день)  
+    - [ ] [4.2. HTTP‑серверы и клиенты][Step 4.2] (1 день)  
+    - [ ] [4.3. API‑серверы, клиенты и инструменты][Step 4.3] (1 день)  
 
-- [ ] [0. Become familiar with Rust basics][Step 0] (3 days)
-- [ ] [1. Concepts][Step 1] (2 days, after all sub-steps)
-    - [ ] [1.1. Default values, cloning and copying][Step 1.1] (1 day)
-    - [ ] [1.2. Boxing and pinning][Step 1.2] (1 day)
-    - [ ] [1.3. Shared ownership and interior mutability][Step 1.3] (1 day)
-    - [ ] [1.4. Clone-on-write][Step 1.4] (1 day)
-    - [ ] [1.5. Conversions, casting and dereferencing][Step 1.5] (1 day)
-    - [ ] [1.6. Static and dynamic dispatch][Step 1.6] (1 day)
-    - [ ] [1.7. `Sized` and `?Sized` types][Step 1.7] (1 day)
-    - [ ] [1.8. Thread safety][Step 1.8] (1 day)
-    - [ ] [1.9. Phantom types][Step 1.9] (1 day)
-- [ ] [2. Idioms][Step 2] (2 days, after all sub-steps)
-    - [ ] [2.1. Rich types ensure correctness][Step 2.1] (1 day)
-    - [ ] [2.2. Swapping values with `mem::replace`][Step 2.2] (1 day)
-    - [ ] [2.3. Bound behavior, not data][Step 2.3] (1 day)
-    - [ ] [2.4. Abstract type in, concrete type out][Step 2.4] (1 day)
-    - [ ] [2.5. Exhaustivity][Step 2.5] (1 day)
-    - [ ] [2.6. Sealing][Step 2.6] (1 day)
-- [ ] [3. Common ecosystem][Step 3] (2 days, after all sub-steps)
-    - [ ] [3.1. Testing and mocking][Step 3.1] (1 day)
-    - [ ] [3.2. Declarative and procedural macros][Step 3.2] (1 day)
-    - [ ] [3.3. Date and time][Step 3.3] (1 day)
-    - [ ] [3.4. Regular expressions and custom parsers][Step 3.4] (1 day)
-    - [ ] [3.5. Collections and iterators][Step 3.5] (1 day)
-    - [ ] [3.6. Serialization and deserialization][Step 3.6] (1 day)
-    - [ ] [3.7. Randomness and cryptography][Step 3.7] (1 day)
-    - [ ] [3.8. Logging and tracing][Step 3.8] (1 day)
-    - [ ] [3.9. Command-line arguments, environment variables and configs][Step 3.9] (1 day)
-    - [ ] [3.10. Multithreading and parallelism][Step 3.10] (1 day)
-    - [ ] [3.11. Async I/O, futures and actors][Step 3.11] (2 days)
-- [ ] [4. Backend ecosystem][Step 4] (3 days, after all sub-steps)
-    - [ ] [4.1. Databases, connection pools and ORMs][Step 4.1] (1 day)
-    - [ ] [4.2. HTTP servers and clients][Step 4.2] (1 day)
-    - [ ] [4.3. API servers, clients and tools][Step 4.3] (1 day)
+## Дополнительная практика  
 
-
-
-
-## More practice
-
-- [Rustlings][rustlings] is a collection of small exercises to get you used to reading and writing [Rust] code.
-- [Rust on Exercism] provides coding exercises with mentoring.
-- [Rust Quiz] for medium to hard [Rust] questions with explanations.
-
-
-
-
-[Step 0]: 0_basics
-[Step 1]: 1_concepts
-[Step 1.1]: 1_concepts/1_1_default_clone_copy
-[Step 1.2]: 1_concepts/1_2_box_pin
-[Step 1.3]: 1_concepts/1_3_rc_cell
-[Step 1.4]: 1_concepts/1_4_cow
-[Step 1.5]: 1_concepts/1_5_convert_cast_deref
-[Step 1.6]: 1_concepts/1_6_dispatch
-[Step 1.7]: 1_concepts/1_7_sized
-[Step 1.8]: 1_concepts/1_8_thread_safety
-[Step 1.9]: 1_concepts/1_9_phantom
-[Step 2]: 2_idioms
-[Step 2.1]: 2_idioms/2_1_type_safety
-[Step 2.2]: 2_idioms/2_2_mem_replace
-[Step 2.3]: 2_idioms/2_3_bound_impl
-[Step 2.4]: 2_idioms/2_4_generic_in_type_out
-[Step 2.5]: 2_idioms/2_5_exhaustivity
-[Step 2.6]: 2_idioms/2_6_sealing
-[Step 3]: 3_ecosystem
-[Step 3.1]: 3_ecosystem/3_1_testing
-[Step 3.2]: 3_ecosystem/3_2_macro
-[Step 3.3]: 3_ecosystem/3_3_date_time
-[Step 3.4]: 3_ecosystem/3_4_regex_parsing
-[Step 3.5]: 3_ecosystem/3_5_collections
-[Step 3.6]: 3_ecosystem/3_6_serde
-[Step 3.7]: 3_ecosystem/3_7_rand_crypto
-[Step 3.8]: 3_ecosystem/3_8_log
-[Step 3.9]: 3_ecosystem/3_9_cmd_env_conf
-[Step 3.10]: 3_ecosystem/3_10_threads
-[Step 3.11]: 3_ecosystem/3_11_async
-[Step 4]: 4_backend
-[Step 4.1]: 4_backend/4_1_db
-[Step 4.2]: 4_backend/4_2_http
-[Step 4.3]: 4_backend/4_3_api
-
+- [Rustlings][rustlings] — сборник небольших упражнений, чтобы привыкнуть к чтению и написанию кода на [Rust].  
+- [Rust на Exercism][Rust on Exercism] — упражнения по программированию с наставничеством.  
+- [Rust Quiz][Rust Quiz] — вопросы по [Rust] средней и высокой сложности с пояснениями.
 [Awesome Rust]: https://github.com/rust-unofficial/awesome-rust
 [Baby Steps]: http://smallcultfollowing.com/babysteps
 [Cargo]: https://github.com/rust-lang/cargo
